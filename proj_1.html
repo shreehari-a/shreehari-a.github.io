@@ -1,0 +1,178 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> 
+<script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+<script>
+    $(function () {
+    var count = $("#slider > img").length
+    var slider = 1
+    var speed = 5000
+    var fadeSpeed = 0 
+    var loop 
+    start()
+    $("#1").fadeIn(fadeSpeed);
+    $('.right').click(right)
+    $('.pause').click(pause)
+    $('.left').click(left)
+    $('#slider').hover(stop,start)
+    
+    function start(){
+        loop = setInterval(next, speed)
+    }
+    function stop(){
+        clearInterval(loop)
+    }
+    function right() {
+        stop()
+        next()
+        start()
+        return false
+    }
+    function pause()
+    {
+        stop()
+        return false
+    }
+
+    function left() {
+        stop()
+        prev()
+        start()
+        return false
+    }
+
+    function prev() {
+        slider--
+        if (slider < 1) {
+            slider = count
+        }
+
+        $("#slider > img").fadeOut(fadeSpeed)
+        $("#" + slider).fadeIn(fadeSpeed)
+    }
+
+    function next() {
+        slider++
+        if (slider > count) {
+            slider = 1
+        }
+
+        $("#slider > img").fadeOut(fadeSpeed)
+        $("#" + slider).fadeIn(fadeSpeed)
+    }
+}); 
+</script>
+
+<style>
+body{
+    background-color:#ececec;
+}
+.container{
+            margin-left:100px;
+            margin-right:100px;
+            padding-bottom:50px;
+            border-left: 2px solid black; 
+            border-right: 2px solid black; 
+            background-color:white;
+            color:black;
+            padding:0px;
+    }
+.proj_pic{   
+        margin-left:2.1%;
+        width:96%;
+        text-align:center;
+        height:auto;
+        padding-top:5px;
+        padding-bottom:10px;
+        
+        position:relative;
+}
+.row{
+    padding-left:4%;
+    padding-right:4%;
+}
+p{
+    font-size:20px;
+}
+         #wrapper {
+            position:relative;
+        }
+        #slider {
+            height:auto;
+        }
+#slider img {
+    width:100%;
+    height:auto;
+    display:none;
+    position:relative;
+    top:0;
+}
+#nav {
+    background:grey;
+    width:100%;
+    text-align:center;
+
+}
+#nav img{
+    width:100px;
+    height:auto;
+}
+h3{
+    font-size:25px;
+    font-color:#424d3f;
+}
+</style>
+</head>
+<body>
+
+
+<div class="container">
+    <a href="proj_1.html"><img class="proj_pic" src="SharkImage.png" style="height:200px"></a>
+    <div class="row">
+        <h3>Why?</h3>
+        <p>I developed this site to learn how images pass over inter-network and gets stored in a remote server.
+            This is a simple platform to upload your images and recoup them back when you need from the website through internet.
+        </p>
+
+    </div>
+    <hr>
+    <div class="row">
+        <h3>Technologies used</h3> 
+        <p>python-Flask, Html, Css, JavaScript</p>
+    </div>
+    <hr>
+    <div class="row">
+        <h3>Have a look through it.</h3>
+
+            <div class="wrapper">
+                <div id="slider">
+                    <img id="1" alt="start" src="explore.png">
+                    <img id="2" alt="1" src="myalbum.png">
+                    <img id="3" alt="2" src="private_home.png">
+                </div> 
+            </div>
+            <div id="nav">
+                <a href="#left" class="left"><img src="previous.png"/></a>
+                <a href="#pause" class="pause"><img src="pause.png" style="height:30px;width:auto;"/></a>
+
+                <a href="#right" class="right"><img src="next.png"/></a>
+            </div>  
+
+    </div>
+    <hr>
+    <div class="row">
+        <h3>How?</h3>
+    </div>
+    <hr>
+    <div class="row">
+        <h3>Components</h3>
+
+            <img class="proj_pic" src="Flowchart_Shark_Image.png"/>
+        
+    </div>
+</div>
+</body>
+</html>
