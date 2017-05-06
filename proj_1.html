@@ -1,10 +1,12 @@
 <html>
 <head>
+<title>SharkImages</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> 
 <script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+<script src="static/js/nav.js"></script>
 <script>
     $(function () {
     var count = $("#slider > img").length
@@ -63,13 +65,19 @@
         $("#slider > img").fadeOut(fadeSpeed)
         $("#" + slider).fadeIn(fadeSpeed)
     }
-}); 
+
+});
+
 </script>
 
+
+<script>
+</script>
 <style>
 body{
     background-color:#ececec;
 }
+
 .container{
             margin-left:100px;
             margin-right:100px;
@@ -97,6 +105,11 @@ body{
 p{
     font-size:20px;
 }
+h3{
+    font-size:25px;
+    font-color:#424d3f;
+    font-weight:600;
+}
          #wrapper {
             position:relative;
         }
@@ -120,17 +133,14 @@ p{
     width:100px;
     height:auto;
 }
-h3{
-    font-size:25px;
-    font-color:#424d3f;
-}
+
 </style>
 </head>
 <body>
-
-
 <div class="container">
-    <a href="proj_1.html"><img class="proj_pic" src="SharkImage.png" style="height:200px"></a>
+   <div id ="anm">
+    <a href="#"><img class="proj_pic" src="static/SharkImage.png"></a><br>
+    <div id="navigation"></div>
     <div class="row">
         <h3>Why?</h3>
         <p>I developed this site to learn how images pass over inter-network and gets stored in a remote server.
@@ -141,7 +151,8 @@ h3{
     <hr>
     <div class="row">
         <h3>Technologies used</h3> 
-        <p>python-Flask, Html, Css, JavaScript</p>
+        <p><i>Back-end : </i>python-Flask<br/>
+        <i>Front-end : </i>Html, Css, JavaScript</p>
     </div>
     <hr>
     <div class="row">
@@ -149,30 +160,36 @@ h3{
 
             <div class="wrapper">
                 <div id="slider">
-                    <img id="1" alt="start" src="explore.png">
-                    <img id="2" alt="1" src="myalbum.png">
-                    <img id="3" alt="2" src="private_home.png">
+                    <img id="1" alt="start" src="static/explore.png">
+                    <img id="2" alt="1" src="static/myalbum.png">
+                    <img id="3" alt="2" src="static/private_home.png">
                 </div> 
             </div>
             <div id="nav">
-                <a href="#left" class="left"><img src="previous.png"/></a>
-                <a href="#pause" class="pause"><img src="pause.png" style="height:30px;width:auto;"/></a>
+                <a href="#left" class="left"><img src="static/previous.png"/></a>
+                <a href="#pause" class="pause"><img src="static/pause.png" style="height:30px;width:auto;"/></a>
 
-                <a href="#right" class="right"><img src="next.png"/></a>
+                <a href="#right" class="right"><img src="static/next.png"/></a>
             </div>  
 
     </div>
     <hr>
     <div class="row">
-        <h3>How?</h3>
+        <h3>How does it work?</h3>
     </div>
     <hr>
     <div class="row">
         <h3>Components</h3>
 
-            <img class="proj_pic" src="Flowchart_Shark_Image.png"/>
+        <img class="proj_pic" src="static/Flowchart_Shark_Image.png"/>
         
     </div>
+    <hr>
+    <div class="row">
+        <h3>Project log</h3>
+    </div>
+    <hr>
+</div>
 </div>
 </body>
 </html>
