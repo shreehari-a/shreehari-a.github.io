@@ -7,6 +7,12 @@
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> 
 <script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
 <script src="static/js/nav.js"></script>
+<script src="static/js/animsition.min.js"></script> 
+<script src="static/js/anim.js"></script>
+<link rel="stylesheet" href="static/css/animsition.min.css">
+<link rel="stylesheet" href="static/css/nav.css">
+
+
 <script>
     $(function () {
     var count = $("#slider > img").length
@@ -137,10 +143,11 @@ h3{
 </style>
 </head>
 <body>
-<div class="container">
-   <div id ="anm">
-    <a href="#"><img class="proj_pic" src="static/SharkImage.png"></a><br>
+
+<div class="container animsition">
+
     <div id="navigation"></div>
+    <a href="#"><img class="proj_pic" src="static/SharkImage.png"></a><br>
     <div class="row">
         <h3>Why?</h3>
         <p>I developed this site to learn how images pass over inter-network and gets stored in a remote server.
@@ -189,7 +196,6 @@ h3{
         <h3>Project log</h3>
     </div>
     <hr>
-</div>
 </div>
 </body>
 </html>
