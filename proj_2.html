@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>CheetahChat</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> 
+<script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+<script src="static/js/nav.js"></script>
+<script src="static/js/animsition.min.js"></script> 
+<script src="static/js/anim.js"></script>
+<link rel="stylesheet" href="static/css/animsition.min.css">
+<link rel="stylesheet" href="static/css/nav.css">
+
+
+<style>
+body{
+    background-color:#bdb7ad;
+}
+.container{
+            margin-left:100px;
+            margin-right:100px;
+            padding-bottom:50px;
+            border-left: 2px solid black; 
+            border-right: 2px solid black; 
+            background-color:white;
+            color:black;
+            padding:0px;
+    }
+.row{
+    padding-left:4%;
+    padding-right:4%;
+}
+.proj_pic{   
+        margin-left:2.1%;
+        width:96%;
+        text-align:center;
+        height:auto;
+        padding-top:5px;
+        padding-bottom:10px;
+        
+        position:relative;
+}
+p{
+    font-size:20px;
+}
+h3{
+    font-size:25px;
+    font-color:#424d3f;
+}
+#wrapper {
+            position:relative;
+        }
+#slider {
+            height:auto;
+        }
+#slider img {
+    width:100%;
+    height:auto;
+    position:relative;
+    top:0;
+}
+#nav {
+    background:grey;
+    width:100%;
+    text-align:center;
+
+}
+#nav img{
+    width:100px;
+    height:auto;
+}
+h3{
+    font-size:25px;
+    font-color:#424d3f;
+    font-weight:600;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container animsition">
+
+<div id="navigation"></div>
+    <a href="#"><img class="proj_pic" src="static/cheetah_chat.png" ></a>
+    <div class="row">
+        <h3>Why?</h3>
+        <p>
+           Sockets are powerful, they rule the inter-net. Each web application uses the sockets.All I wanted to know was how computers communicate using sockets. Then I picked this up! CheetahChat.
+        </p>
+    </div>
+    <hr>
+    <div class="row">
+        <h3>Technologies used</h3> 
+        <p>Python-Socket Programming</p>
+    
+    </div>
+    <hr>
+    <div class="row">
+        <h3>Have a look through it.</h3>
+
+            <div class="wrapper">
+                <div id="slider">
+                    <img src="static/chat_screenshot.png"/>
+                </div> 
+            </div>
+            <div id="nav">
+                <a href="#left" class="left"><img src="static/previous.png"/></a>
+                <a href="#pause" class="pause"><img src="static/pause.png" style="height:30px;width:auto;"/></a>
+
+                <a href="#right" class="right"><img src="static/next.png"/></a>
+            </div>  
+
+    </div>
+    <hr>
+    <div class="row">
+        <h3>How does it work?</h3>
+        <p>This is a simple text-based chat server. 5 clients can connect to to the server at a time and communicate. Clients have two options, broadcast message and private chat.
+        </p>
+
+    </div>
+    <hr>
+    <div class="row">
+        <h3>Project Log</h3>
+        <ul>
+            <li>Designed the architecture of chat server</li>
+            <li>Used TCP/IP stream socket in non-blocking mode</li>
+        </ul>
+    </div>
+    <hr>
+</div>
+</body>
+</html>
