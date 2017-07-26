@@ -11,12 +11,8 @@
 <script src="static/js/anim.js"></script>
 <link rel="stylesheet" href="static/css/animsition.min.css">
 <link rel="stylesheet" href="static/css/nav.css">
-
-
 <style>
-body{
-    background-color:#bdb7ad;
-}
+
 .container{
             margin-left:100px;
             margin-right:100px;
@@ -83,7 +79,7 @@ h3{
 <div class="container animsition">
 
 <div id="navigation"></div>
-    <a href="#"><img class="proj_pic" src="static/cheetah_chat.png" ></a>
+    <a href="#"><img class="proj_pic" src="static/CheetahChat/cheetah_chat.png" ></a>
     <div class="row">
         <h3>Why?</h3>
         <p>
@@ -102,15 +98,10 @@ h3{
 
             <div class="wrapper">
                 <div id="slider">
-                    <img src="static/chat_screenshot.png"/>
+                    <img src="static/CheetahChat/chat_screenshot.png"/>
                 </div> 
             </div>
-            <div id="nav">
-                <a href="#left" class="left"><img src="static/previous.png"/></a>
-                <a href="#pause" class="pause"><img src="static/pause.png" style="height:30px;width:auto;"/></a>
-
-                <a href="#right" class="right"><img src="static/next.png"/></a>
-            </div>  
+         
 
     </div>
     <hr>
@@ -123,9 +114,13 @@ h3{
     <hr>
     <div class="row">
         <h3>Project Log</h3>
-        <ul>
-            <li>Designed the architecture of chat server</li>
-            <li>Used TCP/IP stream socket in non-blocking mode</li>
+        <ul style="font-size: 20px;">
+            <li>Designed the architecture of chat server.</li>
+            <li>Used TCP/IP stream socket in non-blocking mode.</li>
+            <li>Server uses threads for sending message to client.</li>
+            <li>Each client has two threads running, one for sending data to server and one for recieving data from server.
+            <li>Broadcast, private chat feature was implemeted.</li>
+            
         </ul>
     </div>
     <hr>

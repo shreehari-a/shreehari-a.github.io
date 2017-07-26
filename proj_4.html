@@ -1,19 +1,15 @@
 <html>
 <head>
-<title>SharkImages</title>
+<title>SpiderSqlite3</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> 
 <script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
-<script src="static/js/nav.js"></script>
-<script src="static/js/animsition.min.js"></script> 
+<script src="static/js/animsition.min.js"></script>
 <script src="static/js/anim.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<link rel="stylesheet" href="static/css/animsition.min.css">
 <link rel="stylesheet" href="static/css/nav.css">
-
+<link rel="stylesheet" href="static/css/animsition.min.css">
 
 <script>
     $(function () {
@@ -78,11 +74,10 @@
 
 </script>
 
-
-<script>
-</script>
 <style>
-
+body{
+    background-color:white;
+}
 .container{
             margin-left:100px;
             margin-right:100px;
@@ -93,6 +88,10 @@
             color:black;
             padding:0px;
     }
+.row{
+    padding-left:4%;
+    padding-right:4%;
+}
 .proj_pic{   
         margin-left:2.1%;
         width:96%;
@@ -103,28 +102,22 @@
         
         position:relative;
 }
-.row{
-    padding-left:4%;
-    padding-right:4%;
-}
 p{
     font-size:20px;
 }
 h3{
     font-size:25px;
     font-color:#424d3f;
-    font-weight:600;
 }
 #wrapper {
             position:relative;
-}
+        }
 #slider {
-        height:auto;
+            height:auto;
         }
 #slider img {
     width:100%;
     height:auto;
-    display:none;
     position:relative;
     top:0;
 }
@@ -138,49 +131,45 @@ h3{
     width:100px;
     height:auto;
 }
-#log{
-    font:25px !important;
-}
+h3{
+    font-size:25px;
+    font-color:#424d3f;
+    font-weight:600;}
 
 </style>
+<script src="static/js/nav.js"></script>
 </head>
 <body>
-
 <div class="container animsition">
-
     <div id="navigation"></div>
-    <a href="#"><img class="proj_pic" src="static/SharkImages/SharkImage.png"></a><br>
+    <a href="#"><img class="proj_pic" src="static/FavourFeeds/FavourFeeds.png" ></a>
     <div class="row">
         <h3>Why?</h3>
-        <p>I developed this site to learn how images pass over inter-network and gets stored in a remote server.
-            This is a simple platform to upload your images and recoup them back when you need from the website through internet.
-        </p>
-
+        
     </div>
     <hr>
     <div class="row">
-        
         <h3>Technologies used</h3> 
-        <p>Backend : <i>python-Flask</i><br/>
-        Frontend : <i>Html, Css, Twitter Bootstrap, JavaScript</i></p>
-       
-        
+        <p>Backend:<i>Django</i></p>
+        <p>Frontend:<i>AJAX, Html, Jquery</i></p>
     </div>
     <hr><div class="row">
         <h3>Source code</h3> 
-       <a href="https://github.com/shreehari-a/SharkImages" target="_blank"><img style="border:solid;width:12.5%;height:10%;" src="static/github_source.jpg"/></a>
-        <span><a href="http://sharkimages.shreehari.me"><i class="fa fa-link fa-2x" aria-hidden="true"></i></a></span>
+        <p><a href="https://github.com/shreehari-a/SpiderSqlite3"><img style="border:solid;width:12.5%;height:10%;" src="static/github_source.jpg"/></a></p>
     </div>
-
+    <hr>
+    
     <hr>
     <div class="row">
         <h3>Have a look through it.</h3>
 
-            <div class="wrapper">
+           <div class="wrapper">
                 <div id="slider">
-                    <img id="1" alt="start" src="static/SharkImages/explore.png">
-                    <img id="2" alt="1" src="static/SharkImages/myalbum.png">
-                    <img id="3" alt="2" src="static/SharkImages/private_home.png">
+                    <img id="1" alt="start" src="static/FavourFeeds/FavourFeeds_Home.png"/>
+                    <img id="2" alt="1" src="static/FavourFeeds/Favourfeeds-Login.png"/>
+                    <img id="3" alt="2" src="static/FavourFeeds/FavourFeeds_AddFeed.png"/>
+                    <img id="4" alt="3" src="static/FavourFeeds/FavourFeeds_Adding_Feed_progress.png"/>
+                    <img id="5" alt="4" src="static/FavourFeeds/FavourFeeds_JsWarning.png"/>
                 </div> 
             </div>
             <div id="nav">
@@ -193,44 +182,35 @@ h3{
     </div>
     <hr>
     <div class="row">
-        <h3>How to use it?</h3><br/>
-        <p> It's very simple, you just have to either <strong>drag and drop</strong> or <strong>select</strong> the picture you want to upload and press UPLOAD button, that's it. Find your uploaded pictures in EXPLORE.</p>
-    <br/>
-    <p>
+        <h3>How does it work?</h3>
+        <p>Login through your facebook account. Then add your favourite feeds into your dashboard. Get updates on subscribed feeds.</p>
 
-        Supposedly people want to keep their personal pictures private, SharkImages got solution for that too! Just create an account in SharkImages and upload your pictures. If you want a picture to be publicised permanently then press 'MAKE IT PUBLIC' button. </p>
+        <p>
     </div>
     <hr>
     <div class="row">
         <h3>Components</h3>
 
-        <img class="proj_pic" src="static/SharkImages/Flowchart_Shark_Image.png"/>
+        Flow chart for the favourfeeds goes here
         
     </div>
     <hr>
-    <div class="row" id="log">
-        <h3>Project log</h3>
-        <br/>
-        <p><h4>
-        <ul> 
-            <li>First day there was just a file selector, an upload button and upload confirmation page with share url for the image.</li>
-            <br/>
-            <li><strong>Drag and drop</strong> feature was implemented using javascript in the next stage.</li>
-            <br/>
-            <li>Storing images in database was my initial plan. I searched alot for a python module that could do database operations of images for me, couldn't find it!! Then I wrote it on my own( SPIDERSQLITE3 ). Later I changed the storage to file system to increase smoothness of the website.</li>
-            <br/>
-            <li>The must feature<strong> 'explore'</strong> was the next move, where you can find the uploaded images.</li>
-            <br/>
-            <li>Considering people to have their private images in SharkImages, I developed <strong>user account login system</strong> using flask session, </li>  
-            <br/>
-            <li>Added bootstrap navigation bar.</li>
-            <br/>
-            <li>Using Bootstrap modal form created popup modal for login and registration forms.</li>
-            <br/>
+    <div class="row">
+        <h3>Project Log</h3>
+        <ul style="font-size: 20px;">
+            <li>Designed UI for the app using stub principle.</li>
+            <li>Using <b>urllib2</b> and <b>re</b> python modules wrote feed parsing module.</li>
+            <li>Designed database for storing feed details, and wrote <b>models.py</b>.</li>
+            <li>Used AJAX requests for posting data and getting data from server</li>
+            
+            <li>Wrote views.py which includes code for storing feed data.</li>
+            <li>Set up cron job for updating feed details each 5 minutes</li>
+
         </ul>
-    </h4></p>
+
     </div>
     <hr>
+
 </div>
 </body>
 </html>

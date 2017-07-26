@@ -11,6 +11,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> 
 <script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="static/css/animsition.min.css">
 <link rel="stylesheet" href="static/css/nav.css">
 
@@ -37,6 +38,9 @@ $(function(){
         margin-top:0px;
         margin-bottom:0px;
          }
+         .col-md-1, .col-md-4{
+            padding-top:4%;
+         }
 </style>
  
 </head>
@@ -44,58 +48,92 @@ $(function(){
 
 <div class="container animsition">
     <div id="navigation"></div>
-<!--    <nav id="nav_bar" class="navbar"> 
-            <div class="row">
-                <div class="navbar-header">
-                    <a id="brand" class="navbar-brand" href="index.html" style="margin-right:40px;">Shreehari A</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-left">
-                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects
-                            <span class="caret"></span></a> 
-                            <ul class="dropdown-menu">
-                                <li><a href="proj_1.html">SharkImages</a></li>
-                                <li><a href="proj_2.html">CheetahChat</a></li> 
-                                <li><a href="proj_3.html">SpiderSqlite3</a></li>
-                            </ul> 
-                        </li>
-                        <li><a href="#skills">Skills</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="http://www.github.com/shreehari-a"><img src="static/github_icon.png"/></a></li>
-                    </ul>
-                </div>
+    <div class="row">
+        <div class="column col-md-7">
+            <hr>
+            <h3 style="text-align:center;" id="skills"># ABOUT</h3>
+            <hr>
+            <div class="row" id="skill_details" style="text-align: center;">
+                I'm a guy with keeness to learn new technologies.I always keep myself engaged in gaining knowledge.
             </div>
-    </nav>-->
-    <hr> 
-    <h3 style="text-align:center" id="projects"># PROJECTS</h3>
-    <hr>
-        <div class="row">
-        <div class="grid">
-            <div class="grid-sizer"></div>
-            <div class="grid-item">
-                <a href="proj_1.html" class="animsition-link"><img class="proj_pic" src="static/SharkImage.png"></a>
-            </div>
-            <div class="grid-item"> 
-                <a href="proj_2.html" class="animsition-link"><img class="proj_pic" src="static/cheetah_chat.png"/></a>
-            </div>
-            <div class="grid-item"> 
-                <a href="proj_3.html" class="animsition-link"><img class="proj_pic" src="static/spider_sql.png"/></a>
-            </div>
-
         </div>
+        <div class="column col-md-5">
+            <hr>
+            <h3 style="text-align:center;" id="skills"># SKILLS</h3>
+            <hr>
+            <div class="row" id="skill_details">
+                <i> Python, C, C++, Flask, Django,<br/>
+                Html, CSS, JavaScript,<br/>
+                Sqlite3,<br/>
+                Unix, Git.</i>
+            </div>
         </div>
-    <hr>
-    <h3 style="text-align:center" id="skills"># SKILLS</h3>
-    <hr>
-    <div class="row" id="skill_details">
-        <i> Python, Flask, Django,<br/>
-        Html, CSS, JavaScript, Jquery,<br/>
-        MySql, Sqlite3,<br/>
-        Unix, Git.</i>
     </div>
+    <hr> 
+    <h3 style="text-align:left;padding-left:25%;" id="projects"># PROJECTS</h3>
     <hr>
-    <h3 style="text-align:center" >#HOBBIES</h3>
+ 
+            <div class="row" style="height:100%;">
+                <div class="column col-md-7">
+                    
+                        <a href="proj_1.html" class="animsition-link"><img class="proj_pic" src="static/SharkImages/SharkImage.png"></a>
+                    
+                </div>
+                
+                <div class="column col-md-4">
+                     <b>An image hosting solution coded in flask.</b>
+                </div>
+                <div class="column col-md-1">
+                     <a href="http://sharkimages.shreehari.me" target="_blank"><i class="fa fa-link fa-2x" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="row" style="height:100%;">
+                <div class="column col-md-7" >
+                    
+                        <a href="proj_4.html" class="animsition-link"><img class="proj_pic" src="static/FavourFeeds/FavourFeeds.png"/></a>
+                        
+                </div>
+                
+                <div class="column col-md-4">
+                    <b> A feedreader coded in Django. </b>
+                </div>
+                
+                <div class="column col-md-1">
+                     <a href="http://favourfeeds.shreehari.me" target="_blank"><i class="fa fa-link fa-2x" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="row" style="height:100%;">
+                <div class="column col-md-7">
+                    
+                       
+                        <a href="proj_2.html" class="animsition-link"><img class="proj_pic" src="static/CheetahChat/cheetah_chat.png"/></a>
+                    
+                </div>
+                
+                <div class="column col-md-4">
+                    <b> A chat server written in python socket programming.</b>
+                </div>
+                <div class="column col-md-1">
+                     
+                </div>
+            </div>
+            <div class="row" style="height:100%;">
+                <div class="column col-md-7">
+                    
+                       
+                        <a href="proj_3.html" class="animsition-link"><img class="proj_pic" src="static/SpiderSqlite3/spider_sql.png"/></a>
+                    
+                </div>
+                
+                <div class="column col-md-4">
+                     <b>A python module for database operation of images.</b>
+                </div>
+                <div class="column col-md-1">
+                     
+                </div> 
+            </div>
+    <hr>
+    <h3 style="text-align:center;" >#HOBBIES</h3>
     <hr>
     <div class="row" id="hobbies">
         <i>Solving Rubix cube</i><br>
