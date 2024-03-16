@@ -1,0 +1,36 @@
+I"*	<h2 id="experience">Experience</h2>
+
+<h3 id="software-engineer">Software Engineer</h3>
+<p><strong><a href="https://www.linkedin.com/company/yougov/">YouGov</a>, Bangalore, Karnataka, India</strong>
+<em>September 2020 - Present</em></p>
+<h4 id="projects-profiles-lite-brandindex-lite-codebook-customer-profiles-purchase-service">Projects: Profiles Lite, Brandindex Lite, Codebook, Customer Profiles, Purchase Service</h4>
+<ul>
+  <li>Developing and maintaining 6 microservices responsible for operating products to serve market research insights to customers.</li>
+  <li>Architecting Codebook v2, slashing API response times from 3s to under 200ms for a faster user experience.</li>
+  <li>Designing payment integration to the SaaS product using event sourcing approach.</li>
+  <li>Improved performance of widget fetching APIs by 40% by migrating from polling to a pub-sub mechanism.</li>
+  <li>Mentoring, guiding, pair programming, code reviewing with junior members to establish best engineering practices.</li>
+</ul>
+
+<h3 id="senior-software-developer">Senior Software Developer</h3>
+<p><strong><a href="https://www.linkedin.com/company/k12-techno-services-pvt.-ltd./">K12 Techno Services Pvt. Ltd.</a>, Bangalore, Karnataka, India</strong>
+<em>October 2018 - September 2020</em></p>
+<h4 id="projects-letseduvate-erp-questbox">Projects: LetsEduvate ERP, QuestBox</h4>
+<ul>
+  <li>Improved performance of APIs in educational ERP by 43% through query optimization and introducing caching mechanism.</li>
+  <li>Designed and architected multiplayer quiz to handle 20k parallel connections using websockets.</li>
+  <li>Decoupled ERP applications into multiple submodules to increase maintainability.</li>
+  <li>Established CI/CD for the ERP using GitLab runners deploying to AWS infrastructure.</li>
+  <li>Rapid integration of ZOOM APIs into ERP to run schools online during COVID.</li>
+</ul>
+
+<h3 id="analyst">Analyst</h3>
+<p><strong><a href="https://www.linkedin.com/company/delltechnologies/">Dell EMC</a>, Bangalore, Karnataka, India</strong>
+<em>July 2018 - October 2018</em></p>
+<h4 id="projects-sap-basis-team">Projects: SAP Basis Team</h4>
+<ul>
+  <li>Proposed and built a tool for checking production server’s up/down status using Python.</li>
+  <li>Automation of report generation on server’s status, using exported log files.</li>
+</ul>
+
+:ET
